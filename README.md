@@ -1,6 +1,6 @@
 # brin-bench
 
-A benchmark that measures the gap between what a frontier AI model can detect on its own and what it catches with Brin.
+A benchmark that measures the gap between what a frontier AI model can detect on its own and what it catches with [Brin](https://github.com/superagent-ai/brin).
 
 ## The problem
 
