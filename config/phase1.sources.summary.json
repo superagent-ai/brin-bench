@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-03-22T23:53:00.010Z",
+  "config_path": "/Users/samadin/brin-bench/config/phase1.sources.json",
+  "summary": {
+    "total": 297,
+    "by_category": {
+      "web": 100,
+      "email": 100,
+      "skill": 47,
+      "package": 50
+    },
+    "by_freshness": {
+      "established": 149,
+      "fresh": 148
+    }
+  }
+}

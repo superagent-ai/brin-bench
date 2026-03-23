@@ -1,0 +1,32 @@
+{
+  "name": "brin-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Benchmark harness for model-only detection versus Brin.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:brin-truth-dataset": "node scripts/build-brin-truth-dataset.js",
+    "fetch:brin-truth-content": "node scripts/fetch-brin-truth-content.js",
+    "evaluate:brin-truth": "node scripts/evaluate-brin-truth.js",
+    "build:phase1-config": "node scripts/build-phase1-sources-config.js",
+    "fetch:phase1": "node scripts/fetch-runtime-safe-artifacts.js",
+    "sample:manifest": "node scripts/create-sample-manifest.js",
+    "verify:manifest": "node scripts/verify-manifest-fetches.js",
+    "generate:probes": "node scripts/generate-safety-probes.js",
+    "run:brin": "node scripts/run-brin-benchmark.js",
+    "run:model": "node scripts/run-model-benchmark.js",
+    "run:safety": "node scripts/run-safety-tests.js",
+    "evaluate": "node scripts/evaluate-results.js",
+    "check:shuru": "node scripts/check-shuru-setup.js",
+    "confirm:vpn": "node scripts/confirm-vpn-routing.js",
+    "setup:shuru": "bash scripts/setup-shuru-checkpoint.sh",
+    "test": "node --test tests/cursor-agent.test.js tests/evaluation.test.js tests/fetchers.test.js tests/safety.test.js",
+    "test:shuru-live": "RUN_LIVE_SHURU_E2E=1 node --import dotenv/config --test tests/shuru-live.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

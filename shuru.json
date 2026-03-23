@@ -1,0 +1,28 @@
+{
+  "network": {
+    "allow": [
+      "api.anthropic.com",
+      "api.cursor.com",
+      "api.openai.com",
+      "tranco-list.eu",
+      "skills.sh",
+      "raw.githubusercontent.com",
+      "registry.npmjs.org",
+      "pypi.org"
+    ]
+  },
+  "secrets": {
+    "ANTHROPIC_API_KEY": {
+      "from": "ANTHROPIC_API_KEY",
+      "hosts": ["api.anthropic.com"]
+    },
+    "OPENAI_API_KEY": {
+      "from": "OPENAI_API_KEY",
+      "hosts": ["api.openai.com"]
+    },
+    "CURSOR_API_KEY": {
+      "from": "CURSOR_API_KEY",
+      "hosts": ["api.cursor.com"]
+    }
+  }
+}

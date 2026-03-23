@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.local
+results/
+.tmp/
+.DS_Store
+coverage/
+*.log
+.shuru/
+config/phase1.sources.json
+artifacts/brin-truth/
+!artifacts/brin-truth/manifest.jsonl
+config/brin-truth-dataset.json

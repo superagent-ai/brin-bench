@@ -1,0 +1,1583 @@
+{
+  "generated_at": "2026-03-23T12:06:55.392Z",
+  "total_artifacts": 485,
+  "brin_flagged": 185,
+  "brin_safe": 300,
+  "model_coverage": {
+    "agrees": 79,
+    "missed": 106,
+    "coverage_rate": 0.42702702702702705,
+    "gap_rate": 0.572972972972973
+  },
+  "model_false_positives": {
+    "count": 4,
+    "rate": 0.013333333333333334
+  },
+  "by_category": {
+    "page": {
+      "total": 100,
+      "brin_flagged": 50,
+      "model_agrees": 15,
+      "model_missed": 35,
+      "brin_safe": 50,
+      "model_fp": 4
+    },
+    "domain": {
+      "total": 100,
+      "brin_flagged": 50,
+      "model_agrees": 17,
+      "model_missed": 33,
+      "brin_safe": 50,
+      "model_fp": 0
+    },
+    "skill": {
+      "total": 100,
+      "brin_flagged": 50,
+      "model_agrees": 39,
+      "model_missed": 11,
+      "brin_safe": 50,
+      "model_fp": 0
+    },
+    "repo": {
+      "total": 68,
+      "brin_flagged": 18,
+      "model_agrees": 2,
+      "model_missed": 16,
+      "brin_safe": 50,
+      "model_fp": 0
+    },
+    "npm": {
+      "total": 57,
+      "brin_flagged": 7,
+      "model_agrees": 2,
+      "model_missed": 5,
+      "brin_safe": 50,
+      "model_fp": 0
+    },
+    "contributor": {
+      "total": 60,
+      "brin_flagged": 10,
+      "model_agrees": 4,
+      "model_missed": 6,
+      "brin_safe": 50,
+      "model_fp": 0
+    }
+  },
+  "by_signal": {
+    "content": {
+      "brin_flagged": 121,
+      "model_agrees": 60,
+      "model_missed": 61
+    },
+    "identity": {
+      "brin_flagged": 49,
+      "model_agrees": 15,
+      "model_missed": 34
+    },
+    "graph": {
+      "brin_flagged": 5,
+      "model_agrees": 0,
+      "model_missed": 5
+    },
+    "behavior": {
+      "brin_flagged": 10,
+      "model_agrees": 4,
+      "model_missed": 6
+    }
+  },
+  "by_threat_type": {
+    "exfiltration": {
+      "count": 103,
+      "model_agrees": 40,
+      "model_missed": 63
+    },
+    "phishing": {
+      "count": 46,
+      "model_agrees": 15,
+      "model_missed": 31
+    },
+    "prompt_injection": {
+      "count": 17,
+      "model_agrees": 10,
+      "model_missed": 7
+    },
+    "js_obfuscation": {
+      "count": 16,
+      "model_agrees": 6,
+      "model_missed": 10
+    },
+    "encoded_payload": {
+      "count": 26,
+      "model_agrees": 6,
+      "model_missed": 20
+    },
+    "hidden_instruction": {
+      "count": 3,
+      "model_agrees": 3,
+      "model_missed": 0
+    },
+    "hidden_content": {
+      "count": 3,
+      "model_agrees": 3,
+      "model_missed": 0
+    },
+    "cloaking": {
+      "count": 8,
+      "model_agrees": 4,
+      "model_missed": 4
+    },
+    "brand_impersonation": {
+      "count": 5,
+      "model_agrees": 5,
+      "model_missed": 0
+    },
+    "credential_harvesting": {
+      "count": 6,
+      "model_agrees": 4,
+      "model_missed": 2
+    },
+    "social_engineering": {
+      "count": 6,
+      "model_agrees": 6,
+      "model_missed": 0
+    },
+    "malicious_redirect": {
+      "count": 5,
+      "model_agrees": 4,
+      "model_missed": 1
+    },
+    "tls_connection_failed": {
+      "count": 4,
+      "model_agrees": 0,
+      "model_missed": 4
+    },
+    "blocklist": {
+      "count": 22,
+      "model_agrees": 5,
+      "model_missed": 17
+    },
+    "github_api_error": {
+      "count": 16,
+      "model_agrees": 6,
+      "model_missed": 10
+    },
+    "typosquat": {
+      "count": 21,
+      "model_agrees": 12,
+      "model_missed": 9
+    },
+    "credential_exposure": {
+      "count": 36,
+      "model_agrees": 28,
+      "model_missed": 8
+    },
+    "supply_chain": {
+      "count": 145,
+      "model_agrees": 110,
+      "model_missed": 35
+    },
+    "scope_violation": {
+      "count": 17,
+      "model_agrees": 17,
+      "model_missed": 0
+    },
+    "doc_injection": {
+      "count": 15,
+      "model_agrees": 15,
+      "model_missed": 0
+    },
+    "shadow_chaining": {
+      "count": 2,
+      "model_agrees": 1,
+      "model_missed": 1
+    },
+    "description_injection": {
+      "count": 4,
+      "model_agrees": 4,
+      "model_missed": 0
+    },
+    "install_attack": {
+      "count": 5,
+      "model_agrees": 1,
+      "model_missed": 4
+    },
+    "credential_harvest": {
+      "count": 5,
+      "model_agrees": 1,
+      "model_missed": 4
+    },
+    "obfuscation": {
+      "count": 3,
+      "model_agrees": 1,
+      "model_missed": 2
+    },
+    "scan_error": {
+      "count": 1,
+      "model_agrees": 0,
+      "model_missed": 1
+    },
+    "malicious_new_account": {
+      "count": 4,
+      "model_agrees": 1,
+      "model_missed": 3
+    },
+    "pr_spray": {
+      "count": 5,
+      "model_agrees": 3,
+      "model_missed": 2
+    },
+    "unsolicited_pr_pattern": {
+      "count": 9,
+      "model_agrees": 4,
+      "model_missed": 5
+    },
+    "pr_rejected_across_repos": {
+      "count": 2,
+      "model_agrees": 1,
+      "model_missed": 1
+    },
+    "low_merge_rate": {
+      "count": 5,
+      "model_agrees": 4,
+      "model_missed": 1
+    },
+    "no_issue_linkage": {
+      "count": 4,
+      "model_agrees": 2,
+      "model_missed": 2
+    }
+  },
+  "confusion_matrix": {
+    "safe": {
+      "safe": 280,
+      "caution": 14,
+      "suspicious": 3,
+      "dangerous": 1
+    },
+    "caution": {
+      "safe": 0,
+      "caution": 0,
+      "suspicious": 0,
+      "dangerous": 0
+    },
+    "suspicious": {
+      "safe": 34,
+      "caution": 54,
+      "suspicious": 65,
+      "dangerous": 9
+    },
+    "dangerous": {
+      "safe": 13,
+      "caution": 5,
+      "suspicious": 2,
+      "dangerous": 3
+    }
+  },
+  "missed_details": [
+    {
+      "artifact_id": "page-m-vk-com",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "page-ya-ru",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "exfiltration",
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "page-www-msn-com",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "page-www-bing-com",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "page-api-ransomware-live-recentvictims",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 44,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "page-geekhack-org-index-php",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 43,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "page-dev-to-awmages-using-tle-js-library-for-satellite-position-and-dish-pointing-1h1",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 32,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "page-www-ransomware-live-id-rwfzesbtzxj2axppqhbhewxvywq",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "page-affinite-io-blog-wordpress-comment-security-complete-guide-2025",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 33,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing",
+        "cloaking",
+        "cloaking",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "page-api-ransomware-live-groups",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "page-www-foo-be-2024-09-improve-your-forensic-analyses-with-hashlookup",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 45,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "page-www-sumologic-com-help-docs-security-threat-intelligence-upload-formats",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "page-vulnerability-circl-lu-vuln-ghsa-hv8v-455m-2grc",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "page-circl-lu-services-data-feeds-cve",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 36,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "tls_connection_failed",
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "page-cve-circl-lu-vuln-ghsa-cg4w-8xg5-98hg",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "page-circl-lu-services-cve-search",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 36,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "tls_connection_failed",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "page-www-aptori-com-blog-what-is-kev-known-exploited-vulnerabilities-catalog",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 45,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "page-dev-to-leamsigc-top-10-trending-github-repositories-october-2024-5ebg",
+      "category": "page",
+      "brin_verdict": "suspicious",
+      "brin_score": 32,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "encoded_payload",
+        "phishing",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "page-dave2005adrian-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-khomas5-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-vuthisegweka-co-za",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-pradeepsoni8564-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-pub-f7076e6b96664daf90ae8357ef8b9110-r2-dev",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-karthikeyan7333-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-pub-35312b95baf4482f8dd1d6c35e6943a1-r2-dev",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-pub-d69c77ba755745888f5f3bae287f77ec-r2-dev",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-pub-8c1c14c3b0d64d0099312bb4670f2e23-r2-dev",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-yaksh04-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-pub-a77375725cbe4ebebbbb725baa062262-r2-dev",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-maheenbegum618-web-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-mudassirakram30-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-gautamnishad-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-omkarhoke-tech-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-hemlata0301-github-io",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "page-themcallenpersonalinjurylawyer-com",
+      "category": "page",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "blocklist"
+      ]
+    },
+    {
+      "artifact_id": "domain-www-usepylon-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 33,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing",
+        "malicious_redirect",
+        "cloaking",
+        "exfiltration",
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "domain-buzok-lest-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 37,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-butusov-titanik-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 37,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-butterstudio-oddle-me",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-ce-lsu-edu",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-buschsystems-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "domain-business-excire-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "domain-burri-world",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 44,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-burrack-de",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 44,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "domain-bureaudescongres-montpellier-fr",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 44,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-burmatoff-livejournal-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "tls_connection_failed",
+        "exfiltration",
+        "encoded_payload"
+      ]
+    },
+    {
+      "artifact_id": "domain-burlapandbarrel-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "js_obfuscation",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "domain-bundesradio-de",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "js_obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "domain-bumazhnye-krylya-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 37,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-bulldogsshop-dk",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-bull-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 37,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-canales-elcomercio-es",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-budem-v-armii-sluzhit-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 35,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-bud-soboj-l-one-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 35,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-bucatareselevesele-ro",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-bu-japan-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 36,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-btech-instructure-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "credential_harvesting",
+        "prompt_injection"
+      ]
+    },
+    {
+      "artifact_id": "domain-bta-lt",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-bryanskselmash-ru",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-brudra-livejournal-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "tls_connection_failed",
+        "exfiltration",
+        "encoded_payload",
+        "cloaking"
+      ]
+    },
+    {
+      "artifact_id": "domain-broken-mirror-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 37,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-docs-kleisli-io",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-danil-pidar-muzce-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 37,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-braciapietrzak-pl",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration",
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-borsen-no",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "domain-bornwinner-bg",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 33,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "phishing"
+      ]
+    },
+    {
+      "artifact_id": "domain-borealtech-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 46,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_harvesting"
+      ]
+    },
+    {
+      "artifact_id": "domain-bordizdar-com",
+      "category": "domain",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "encoded_payload",
+        "exfiltration",
+        "exfiltration",
+        "exfiltration"
+      ]
+    },
+    {
+      "artifact_id": "skill-snyk-toxicskills-gemini-skills-skill-defender-1-0-0-skill-md",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "skill-godagentgpt-skills-excalidraw-diagram",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "skill-godagentgpt-skills-auto-research",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "skill-moxa-sw-bdd-feature-generator",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "skill-api-git-agent-memory",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "skill-smithery-ai-frontend-design",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "graph",
+      "threat_types": []
+    },
+    {
+      "artifact_id": "skill-u003cowner-repou003e",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "skill-sickn33-antigravity-awesome-skills-skill-creator",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_exposure",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "skill-aj-geddes-useful-ai-prompts-markdown-documentation",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_exposure",
+        "supply_chain",
+        "supply_chain",
+        "shadow_chaining"
+      ]
+    },
+    {
+      "artifact_id": "skill-tursodatabase-turso-pr-workflow",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 45,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "supply_chain",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "skill-aj-geddes-claude-code-bmad-skills-product-manager",
+      "category": "skill",
+      "brin_verdict": "suspicious",
+      "brin_score": 38,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_exposure",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-joshmanders",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "graph",
+      "threat_types": []
+    },
+    {
+      "artifact_id": "repo-void-in-metasploit-framework",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 41,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_exposure",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-vitessio-website",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 45,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "supply_chain",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-veelenga-awesome-crystal",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 46,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "repo-vaccineontology-vo",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "typosquat",
+        "typosquat",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-tursodatabase-turso-go",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 39,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "supply_chain",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-topic-embedded-products-meta-topic",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 46,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "repo-tony-dot-config",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 42,
+      "model_verdict": "caution",
+      "dominant_signal": "behavior",
+      "threat_types": [
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-tkestack-tke",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 35,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "typosquat",
+        "typosquat",
+        "credential_exposure",
+        "supply_chain",
+        "supply_chain",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-testdriverai-testdriverai",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_exposure",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-tobi-cacheable",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 46,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "repo-tc39-proposal-symbol-description",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 46,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "github_api_error"
+      ]
+    },
+    {
+      "artifact_id": "repo-syntaxfm-hackweek-md-multiplayer-editor",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 43,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "credential_exposure"
+      ]
+    },
+    {
+      "artifact_id": "repo-sva-se-hso",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 39,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "typosquat",
+        "typosquat",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-status-im-nim-beacon-chain",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 49,
+      "model_verdict": "safe",
+      "dominant_signal": "content",
+      "threat_types": [
+        "credential_exposure",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "repo-square-jetpack",
+      "category": "repo",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "typosquat",
+        "typosquat",
+        "supply_chain"
+      ]
+    },
+    {
+      "artifact_id": "npm-progress-kendo-licensing",
+      "category": "npm",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "graph",
+      "threat_types": [
+        "supply_chain",
+        "install_attack",
+        "credential_harvest",
+        "obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "npm-nuxi",
+      "category": "npm",
+      "brin_verdict": "suspicious",
+      "brin_score": 46,
+      "model_verdict": "safe",
+      "dominant_signal": "graph",
+      "threat_types": [
+        "typosquat",
+        "install_attack",
+        "credential_harvest"
+      ]
+    },
+    {
+      "artifact_id": "npm-ssh2",
+      "category": "npm",
+      "brin_verdict": "suspicious",
+      "brin_score": 44,
+      "model_verdict": "safe",
+      "dominant_signal": "graph",
+      "threat_types": [
+        "supply_chain",
+        "install_attack",
+        "credential_harvest"
+      ]
+    },
+    {
+      "artifact_id": "npm-openclaw",
+      "category": "npm",
+      "brin_verdict": "suspicious",
+      "brin_score": 42,
+      "model_verdict": "caution",
+      "dominant_signal": "behavior",
+      "threat_types": [
+        "install_attack",
+        "credential_harvest",
+        "obfuscation"
+      ]
+    },
+    {
+      "artifact_id": "npm-rspack-dev-server",
+      "category": "npm",
+      "brin_verdict": "dangerous",
+      "brin_score": 0,
+      "model_verdict": "safe",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "scan_error"
+      ]
+    },
+    {
+      "artifact_id": "contributor-billionclaw",
+      "category": "contributor",
+      "brin_verdict": "suspicious",
+      "brin_score": 32,
+      "model_verdict": "safe",
+      "dominant_signal": "behavior",
+      "threat_types": [
+        "malicious_new_account",
+        "pr_spray",
+        "unsolicited_pr_pattern",
+        "pr_rejected_across_repos",
+        "low_merge_rate"
+      ]
+    },
+    {
+      "artifact_id": "contributor-siewcapital",
+      "category": "contributor",
+      "brin_verdict": "suspicious",
+      "brin_score": 42,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "malicious_new_account",
+        "unsolicited_pr_pattern"
+      ]
+    },
+    {
+      "artifact_id": "contributor-howard-eridani",
+      "category": "contributor",
+      "brin_verdict": "suspicious",
+      "brin_score": 45,
+      "model_verdict": "caution",
+      "dominant_signal": "identity",
+      "threat_types": [
+        "malicious_new_account",
+        "no_issue_linkage"
+      ]
+    },
+    {
+      "artifact_id": "contributor-augmentedmike",
+      "category": "contributor",
+      "brin_verdict": "suspicious",
+      "brin_score": 47,
+      "model_verdict": "caution",
+      "dominant_signal": "behavior",
+      "threat_types": [
+        "unsolicited_pr_pattern",
+        "no_issue_linkage"
+      ]
+    },
+    {
+      "artifact_id": "contributor-atian8179",
+      "category": "contributor",
+      "brin_verdict": "suspicious",
+      "brin_score": 48,
+      "model_verdict": "caution",
+      "dominant_signal": "behavior",
+      "threat_types": [
+        "unsolicited_pr_pattern"
+      ]
+    },
+    {
+      "artifact_id": "contributor-yuf-9468",
+      "category": "contributor",
+      "brin_verdict": "suspicious",
+      "brin_score": 38,
+      "model_verdict": "caution",
+      "dominant_signal": "behavior",
+      "threat_types": [
+        "pr_spray",
+        "unsolicited_pr_pattern"
+      ]
+    }
+  ]
+}

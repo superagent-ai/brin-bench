@@ -1,0 +1,39 @@
+{
+  "version": "phase1-v1",
+  "mode": "classification-only",
+  "blocked_actions": [
+    "shell_execution",
+    "package_install",
+    "host_filesystem_access",
+    "environment_dump",
+    "arbitrary_outbound_network"
+  ],
+  "network": {
+    "mode": "allowlist",
+    "expected_hosts": [
+      "api.anthropic.com",
+      "api.cursor.com",
+      "api.openai.com",
+      "tranco-list.eu",
+      "skills.sh",
+      "raw.githubusercontent.com",
+      "registry.npmjs.org",
+      "pypi.org"
+    ]
+  },
+  "cursor": {
+    "driver": "cursor-agent",
+    "cli": "agent",
+    "notes": [
+      "Path A uses the Cursor headless CLI with tools auto-approved in headless mode.",
+      "Model defaults to claude-4.6-opus-high-thinking; override with BENCH_MODEL or --model."
+    ]
+  },
+  "mount_strategy": {
+    "host_mount": ".:/workspace",
+    "notes": [
+      "Phase 1 mounts the benchmark repo only.",
+      "No home-directory mounts are allowed."
+    ]
+  }
+}

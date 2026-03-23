@@ -1,0 +1,105 @@
+{
+  "schema_version": "2026-03-21",
+  "freshness_windows": {
+    "web": 60,
+    "email": 60,
+    "skill": 60,
+    "package": 60
+  },
+  "web": {
+    "tranco_api_url": "https://tranco-list.eu/api/lists/date/latest",
+    "artifacts": [
+      {
+        "artifact_id": "web-cloudflare-home",
+        "source_name": "tranco",
+        "source_kind": "live_index",
+        "requested_ref": "https://www.cloudflare.com/",
+        "brin_origin": "page",
+        "brin_identifier": "www.cloudflare.com/",
+        "freshness_tier": "established",
+        "selection_reason": "Stable top-ranked domain for safe web smoke tests.",
+        "freshness_note": "Freshness tier is operator-assigned for phase 1. Tranco confirms list recency, not page publish time."
+      },
+      {
+        "artifact_id": "web-vercel-home",
+        "source_name": "tranco",
+        "source_kind": "live_index",
+        "requested_ref": "https://vercel.com/",
+        "brin_origin": "page",
+        "brin_identifier": "vercel.com/",
+        "freshness_tier": "fresh",
+        "selection_reason": "Representative modern SaaS landing page for the fresh safe slice.",
+        "freshness_note": "Freshness is inferred from selection policy in phase 1."
+      }
+    ]
+  },
+  "email": {
+    "artifacts": [
+      {
+        "artifact_id": "email-basic-safe-sample",
+        "source_name": "generic-rfc822-sample",
+        "source_kind": "live_direct",
+        "requested_ref": "https://raw.githubusercontent.com/mikel/mail/master/spec/fixtures/emails/plain_emails/basic_email.eml",
+        "message_id": "phase1-basic-email-sample",
+        "freshness_tier": "established",
+        "selection_reason": "Raw RFC822 sample used to validate the email path without mirroring Enron in phase 1.",
+        "freshness_note": "Phase 1 uses representative safe .eml samples. Official Enron mirroring is deferred to phase 2."
+      },
+      {
+        "artifact_id": "email-raw-safe-sample",
+        "source_name": "generic-rfc822-sample",
+        "source_kind": "live_direct",
+        "requested_ref": "https://raw.githubusercontent.com/mikel/mail/master/spec/fixtures/emails/plain_emails/raw_email.eml",
+        "message_id": "phase1-raw-email-sample",
+        "freshness_tier": "fresh",
+        "selection_reason": "Second safe .eml sample for runtime email validation.",
+        "freshness_note": "Freshness tier is operator-assigned for phase 1 harness testing."
+      }
+    ]
+  },
+  "skill": {
+    "audits_url": "https://skills.sh/audits",
+    "artifacts": [
+      {
+        "artifact_id": "skill-find-skills",
+        "source_name": "skills.sh",
+        "source_kind": "live_index",
+        "requested_ref": "https://skills.sh/vercel-labs/skills/find-skills",
+        "brin_identifier": "vercel-labs/skills/find-skills",
+        "freshness_tier": "established",
+        "selection_reason": "Known safe audited skill from the public directory."
+      },
+      {
+        "artifact_id": "skill-frontend-design",
+        "source_name": "skills.sh",
+        "source_kind": "live_index",
+        "requested_ref": "https://skills.sh/anthropics/skills/frontend-design",
+        "brin_identifier": "anthropics/skills/frontend-design",
+        "freshness_tier": "fresh",
+        "selection_reason": "Second safe audited skill for fresh-tier coverage."
+      }
+    ]
+  },
+  "package": {
+    "artifacts": [
+      {
+        "artifact_id": "package-npm-express",
+        "source_name": "npm-registry",
+        "source_kind": "live_index",
+        "ecosystem": "npm",
+        "name": "express",
+        "freshness_tier": "established",
+        "selection_reason": "Widely used safe npm package."
+      },
+      {
+        "artifact_id": "package-pypi-httpx",
+        "source_name": "pypi-registry",
+        "source_kind": "live_index",
+        "ecosystem": "pypi",
+        "name": "httpx",
+        "freshness_tier": "fresh",
+        "selection_reason": "Modern safe PyPI package for fresh-tier package coverage."
+      }
+    ]
+  }
+}

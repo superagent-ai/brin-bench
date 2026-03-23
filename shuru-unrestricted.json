@@ -1,0 +1,3 @@
+{
+  "description": "Unrestricted Shuru config for the cursor-agent driver path. Shuru's network.allow enables a MITM proxy incompatible with the Cursor CLI (certificate pinning). The VM still provides hypervisor isolation, ephemeral rootfs, and no host filesystem access beyond mounted paths."
+}
